@@ -8,7 +8,9 @@ if($link)
 	echo "Connect";
 
 else
-	echo "die : ".mysql_error();?>
+	echo "die : ".mysql_error();
+$db_selected = mysql_select_db($db_name, $link);
+?>
 <title>KCT G4MER</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -78,8 +80,8 @@ body {
 </table>
 <?php 
 		$command = "SELECT * FROM STOCK";
-		$result = mysql_quert($command) or die (mysql_error()); 
-		$que = mysql_fetch_array($result);
+		$result = mysql_query($command) or die (mysql_error()); 
+		//$que = mysql_fetch_array($result);
 ?>
 <table align="center" class="table table-hover">
 	<thead>
