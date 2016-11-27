@@ -49,8 +49,8 @@ body {
   <tr>
     <td height="70" bgcolor="#FFFFFF"><table width="100%" height="66" border="1">
       <tr class="set">
-        <th width="19%" height="60" scope="col"><img src="home-logo-md.png" width="20" height="20" /> หน้าแรก </th>
-        <th width="22%" scope="col"><img src="xigKzEg4T.png" width="31" height="27" />  รายการสินค้า</th>
+        <th width="19%" height="60" scope="col"><img src="home-logo-md.png" width="20" height="20" /><a href="index.php"> หน้าแรก </a></th>
+        <th width="22%" scope="col"><img src="xigKzEg4T.png" width="31" height="27" /> <a href="item.php"> รายการสินค้า</a></th>
         <th width="19%" bgcolor="#FFFFFF" scope="col"><ul id="MenuBar1" class="MenuBarHorizontal">
           <li class="MenuBarSubmenuVisible"><a class="MenuBarItemSubmenu" href="#"><img src="mouse.png" width="23" height="21" />รายละเอียดร้าน</a>
               <ul>
@@ -64,7 +64,7 @@ body {
           <li><a class="MenuBarItemSubmenu" href="#"><img src="man-42934_960_720.png" width="21" height="25" />เข้าสู่ระบบ</a>
               <ul>
                 <li><a href="loginc.php">ลูกค้า</a></li>
-                <li><a href="#">สมาชิก</a></li>
+                <li><a href="loginemp">สมาชิก</a></li>
 </ul>
             </li>
     </ul></th>
