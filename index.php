@@ -64,7 +64,7 @@ body {
           <li><a class="MenuBarItemSubmenu" href="#"><img src="man-42934_960_720.png" width="21" height="25" />เข้าสู่ระบบ</a>
               <ul>
                 <li><a href="loginc.php">ลูกค้า</a></li>
-                <li><a href="loginemp">สมาชิก</a></li>
+                <li><a href="loginemp.php">สมาชิก</a></li>
 </ul>
             </li>
     </ul></th>
