@@ -1,8 +1,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-</head>
+<head><?php session_start(); ?></head>
 <body>
 <?
+
 	if($_POST["username"]!= '' and $_POST['password'] !=''){
 	
 	 include ('connect.php');
@@ -14,7 +15,8 @@
 		 $query1=mysql_query($sql1);
 		 $num1=mysql_num_rows($query1);
 		   if($num1==1){
-			   echo "<script>alert('ยินดีต้อนรับเข้าสู่ระบบ'); window.location='index.php';</script>";
+		   	$_SESSION["status"] = "online";
+			   echo "<script>alert('ยินดีต้อนรับเข้าสู่ระบบ'); window.location='item.php';</script>";
 			   }
 		  else {
 			  echo "<script>alert('รหัสผ่านไม่ถูกต้อง'); window.location='loginc.php';</script>";

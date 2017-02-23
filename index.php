@@ -1,4 +1,5 @@
-<title>KCT G4MER</title>
+<title>KCT G4MER
+<?php session_start(); ?></title>
 <?php
   $hostname ="localhost";
   $username ="cs57160040";
@@ -39,11 +40,11 @@ body {
 <table width="1082" height="308" border="1" align="center">
   <tr>
     <th width="300" rowspan="2" bgcolor="#FFFFFF" scope="col"><img src="b4ca5516-caf8-44c6-98aa-52b16dc8198f.png" width="300" height="300" /></th>
-    <th width="753" height="230" bgcolor="#FF9999" scope="col"><h1 class="SET"><span class="SET">KCT 4 gamer</span>    </h1>
+    <th width="753" height="230" bgcolor="#FF9999" scope="col"><h1 class="SET"><span class="SET">KCT 4 gamer </span>    </h1>
     <p><span class="SET"><span class="SET"><span style="font-weight: bold; font-family: AngsanaUPC; font-size: 24px;">KCT Shop อุปกรณ์เกมส์แบนด์ดัง คอมแรงคอเกมส์ แต่งคอมสวยด้วยชุดระบายความร้อนด้วยน้ำ รับซ่อมประกอบอัพเกรดคอม</span></span></span></p>
     <p><span class="SET">ปรับปรุงล่าสุดเมื่อ -
 
-        <!-- #BeginDate format:Am1 -->June 24, 2016<!-- #EndDate -->
+        <!-- #BeginDate format:Am1 -->June 24, 2016<!-- #EndDate --> 
     </span></p></th>
   </tr>
   <tr>
@@ -52,8 +53,13 @@ body {
         <th width="19%" height="60" scope="col"><img src="home-logo-md.png" width="20" height="20" /><a href="index.php"> หน้าแรก </a></th>
         <th width="22%" scope="col"><img src="xigKzEg4T.png" width="31" height="27" /> <a href="item.php"> รายการสินค้า</a></th>
         
-        <th width="20%" scope="col"><img src="persona-logo.png" width="20" height="20"  /> <a href="ddd.php">สมัครสมาชิก</a></th>
-        <th width="20%" scope="col"><img src="man-42934_960_720.png" width="20" height="20"  /> <a href="loginc.php">เข้าสู่ระบบ</a></th>
+        <th width="20%" scope="col"><img src="persona-logo.png" width="20" height="20"  />    
+        <?php if($_SESSION["status"]=="online") 
+                 echo '<a href="ddd.php">เพิ่มรายชื่อพนักงาน</a>'; 
+              else echo '<a href="listemp.php">รายชื่อพนักงาน</a>';
+        ?>
+        </th>  
+        <th width="20%" scope="col"><img src="man-42934_960_720.png" width="20" height="20"  /> <a href="loginc.php"> <?php if($_SESSION["status"]=="online") echo "ออกจากระบบ"; else echo "เข้าสู่ระบบ";?> </a></th>
       </tr>
     </table></td>
   </tr>
@@ -66,8 +72,8 @@ var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenu
     <tbody
   sizset="6" sizcache="5"><tr><td style="text-align: center;">
     <marquee style="width: 100%; height: 300px;" onmouseover="this.stop()"
-    onmouseout="this.start()" height="300" width="100%" scrollamount="1" truespeed=""
-    scrolldelay="-999999999999999999999">
+    onmouseout="this.start()" height="300" width="100%" scrollamount="10" truespeed=""
+    scrolldelay="10000000000">
       <right><a href="https://images.bentoweb.com/store-11636/product/b761525e-a761-914a-ae4b-5269786fa826.png"
       ><img alt="" src="https://images.bentoweb.com/store-11636/product/826cd209-5f42-3223-1186-52696c11fa68.png" width="500" height="300"
       /></a>
